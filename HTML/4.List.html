@@ -1,0 +1,100 @@
+            <!-- ! List in HTML  -->
+
+<!-- HTML lists allow you to group a set of related items together in a 
+structured format. 
+- Lists in HTML are categorized into three types:  -->
+
+   <!-- todo  1. Ordered List 
+        todo  2. Unordered List 
+        todo  3. Description List  -->
+
+
+        <!-- ! 1. Ordered List  -->
+                <!-- - Used to group related items in a sequential, numbered format. It is 
+                often referred to as a Number List.  -->
+
+         <!-- todo:Tags: - -->
+         <!--    <ol>: Denotes the start of an ordered list. 
+               - <li>: Indicates each list item within the ordered list.  -->
+                
+        <!-- todo:- Attributes:  -->
+         <!--   - type: Specifies the type of numbering sequence. 
+                - Values: ( 1, A, a, I, i) 
+                - start: Specifies the starting number of the list. 
+                - reversed: Reverses the order of the list items -->
+
+
+        <!-- !  2. Unordered List -->
+                
+             <!--     - Used to display a set of related items without any particular order. 
+                        Commonly referred to as a Bulleted List.  -->
+         <!-- todo:- Tags: -->
+            <!--    - <ul>: Indicates the start of an unordered list. 
+                    - <li>: Indicates each list item within the unordered list.  -->
+                        
+         <!-- todo:- Attributes:  -->
+            <!--     - type: Specifies the type of bullet symbol. 
+                     - Values: (disc, circle, square, none) -->
+
+
+         <!-- !  3. Description List  -->
+
+            <!--   - Used to display a list of terms and their associated descriptions. This is 
+                     often used for glossaries, or to define terms and their meanings.  -->
+         <!-- todo:- Tags: -->
+            <!--    - <dl>: Indicates the start of a description list.
+                    - <dt>: Represents a description term. 
+                    - <dd>: Represents a description definition, providing more information 
+                     about the term. 
+                      -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>List</title>
+    </head>
+    <body>
+        <h1><u>List in HTML</u></h1>
+        <h3>1.Ordered List.</h3>
+        <h3>2.Unordered List.</h3>
+        <h3>3.Description List.</h3>
+
+
+        <h2><u>1.Ordered List</u></h2>
+        <h4>using numbers (default is number if we want we can change using type attribute)</h4>
+
+       <ol>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cucumber</li>
+       </ol>
+
+       <h4>Using type="A" </h4>
+       <ol type="A" >
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cucumber</li>
+       </ol>
+
+       <h2><u>2.Unordered List.</u></h2>
+       <h4>Default is bullet(If we want to change then we want to change in type=)</h4>
+          
+       <ul >              <!-- type="disc","circle","square","None" -->
+         <li>Apple</li>
+         <li>Banana</li>
+         <li>Cucumber</li>
+       </ul>
+      
+       <h2><u>3.Description List.</u></h2>
+
+       <dl>
+         <dt>HTML</dt>
+         <dd>Hyper Text Markup Language.</dd>
+       </dl>
+
+       
+    </body>
+    </html>
+

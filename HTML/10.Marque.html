@@ -1,0 +1,69 @@
+     <!-- ! marquee tag --> 
+<!-- The <marquee> tag is used to create scrolling text or other elements in a webpage.  -->
+
+    <!-- todo:Syntax  -->
+                <!-- <marquee behavior="" direction="">Content</marquee>  -->
+
+<!--? Attributes of the <marquee> Tag  -->
+        <!-- - direction: Specifies the direction in which the content should scroll.  -->
+            <!-- todo:- Values:  -->
+                <!-- - left (default) → Scrolls content from right to left. 
+                - right → Scrolls content from left to right. 
+                - up → Scrolls content from bottom to top. 
+                - down → Scrolls content from top to bottom.  -->
+    <!-- - behavior: Specifies the scrolling behavior of the content.  -->
+            <!-- todo:- Values:  -->
+                <!-- - scroll (default) → Content scrolls continuously. 
+                    - slide → Content slides in, then stops. 
+                    - alternate → Content alternates back and forth (bounces).  -->
+    <!-- - scrollamount: Specifies the speed of the scrolling content. 
+    - loop: Specifies how many times the content should scroll.
+    - height: Specifies the height of the marquee container. 
+    - width:Specifies the width of the marquee container -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee Tag</title>
+</head>
+<body>
+    <h1><u>Marquee behavior="slide" direction=all</u></h1>
+    <marquee behavior="slide" direction="up" >Hiii</marquee>
+    <marquee behavior="slide" direction="down">Hiii</marquee>
+    <marquee behavior="slide" direction="left">Hiii</marquee>
+    <marquee behavior="slide" direction="right">Hiii</marquee>
+
+
+    <h1><u>Marquee behavior="scroll" direction=all</u></h1>
+    <marquee behavior="scroll" direction="up" >Hiii</marquee>
+    <marquee behavior="scroll" direction="down">Hiii</marquee>
+    <marquee behavior="scroll" direction="left">Hiii</marquee>
+    <marquee behavior="scroll" direction="right">Hiii</marquee>
+    
+
+    <h1><u>Marquee behavior="Alternate" direction=all</u></h1>
+    <marquee behavior="alternate" direction="up" >Hiii</marquee>
+    <marquee behavior="alternate" direction="down">Hiii</marquee>
+    <marquee behavior="alternate" direction="left">Hiii</marquee>
+    <marquee behavior="alternate" direction="right">Hiii</marquee>
+
+    <h1><u>Scroll amount</u></h1>
+    <marquee behavior="Scroll" direction="right">without scrollamount</marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="10">with scrollamount</marquee>
+
+    <h1><u>loop</u></h1>
+    <marquee behavior="slide" direction="up">Without loop</marquee>
+    <marquee behavior="slide" direction="up" loop="10">with loop 10 times</marquee>
+
+    <h1><u>width</u></h1>
+    <marquee behavior="scroll" direction="right" >Without width</marquee>
+    <marquee behavior="scroll" direction="right" width="50%" >with width 90 </marquee>
+
+    <h1><u>height(is not support in HTML 5.)</u></h1>
+    <marquee behavior="scroll" direction="up" bgcolor="green">Without heigth</marquee>
+    <marquee behavior="scroll" direction="up" height=90% bgcolor="green">with height 90 </marquee>
+</body>
+</html>

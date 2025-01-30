@@ -1,0 +1,113 @@
+          <!-- !   TABLE --> 
+ 
+<!-- - An HTML table is used to organize data into rows and columns, providing a 
+structured layout for displaying information.  -->
+
+        <!-- todo:Syntax -->
+            <!-- <table>
+                <tr>
+                    <td>content1</td>
+                    <td>content2</td>
+                </tr>
+                <tr>
+                    <td>content 11</td>
+                    <td>content 12</td>
+                </tr>
+            </table>  -->
+
+            
+  <!-- ? - An HTML table is composed of several elements:  -->
+     <!-- - <table>: This tag defines the table itself. 
+     - <tr>: Represents a table row. 
+     - <th>: Represents a header cell within a table row, usually containing column headings.
+              It is bold and centered by default. 
+     - <td>: Represents a standard data cell within a table row.  -->
+ 
+  <!-- ? Attributes of the <table> Tag  -->
+ 
+   <!-- - border: Specifies the width of the border around the table and cells. 
+              The  default value is 0 (no border). 
+ 
+   - cellpadding: Specifies the amount of space between the cell content and the cell border. 
+  
+   - cellspacing: Specifies the amount of space between the borders of adjacent cells. 
+ 
+   - width and height: Specifies the dimensions of the table. These can be set in pixels or 
+                      as a percentage of the containing element.  -->
+ 
+ <!-- ? Merging Cells  -->
+ 
+   <!-- - colspan: Merges two or more columns within a row. -->
+            <!-- todo:<td colspan="no of column">content</td> -->
+   <!-- - rowspan: Merges two or more rows within a column.   -->
+            <!-- todo:<td rowspan="no of rows">content</td> -->
+ 
+ <!-- ? Advanced Table Elements  -->
+ 
+   <!-- - <caption>: Adds a title or description to the table. It appears above the table by default. -->
+             <!-- todo:syntax:<Caption>content</Caption>  <tr>content </tr>  -->
+   <!-- - <thead>: Groups the header content (typically <th> elements) in a table.  -->
+          <!-- todo:syntax:<thead><tr>content </tr></thead> -->
+   <!-- - <tbody>: Groups the body content (typically <td> elements) in a table.  -->
+             <!-- todo:syntax:<tbody><tr>content </tr></tbody> -->
+   <!-- - <tfoot>: Groups the footer content in a table.  -->
+             <!-- todo:syntax:<tfoot><tr>content </tr></tfoot> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table,tr,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        thead{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    
+<table>
+    <caption>Table</caption>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+    </tr>
+</thead>
+    <tr>
+        <td>A</td>
+        <td>12</td>
+        <td>M</td>
+    </tr>
+    <tr>
+        <td>B</td>
+        <td>23</td>
+        <td>F</td>
+    </tr>
+
+</table>
+<h2><u>Using rowspan and colspan.</u></h2>
+<table>
+    <tr >
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+    </tr>
+    <tr>
+        <td rowspan="2">A</td>
+        <td >23</td>
+        <td>M</td>
+    </tr>
+    <tr>
+        <td colspan="2">12</td>
+    </tr>
+</table>
+</body>
+</html>
